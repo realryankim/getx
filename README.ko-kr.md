@@ -496,7 +496,7 @@ class HomeProvider extends GetConnect {
     httpClient.addResponseModifier<CasesModel>((request, response) {
       CasesModel model = response.body;
       if (model.countries.contains('Brazil')) {
-        model.countries.remove('Brazilll');
+        model.countries.remove('Brazil');
       }
     });
 
